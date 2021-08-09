@@ -23,7 +23,7 @@ jobs:
           # Your ML workflow goes here
           pip install -r requirements.txt
           python train.py
-        run: |
+        
           # Post reports as comments in GitHub PRs
           cat results.txt >> report.md
           cml-send-comment report.md
